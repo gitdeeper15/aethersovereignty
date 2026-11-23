@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "AetherSovereignty: The Architectural Independence of Sovereignty in Autonomous Agent Systems"
+version: 1.0.0
+doi: 10.5281/zenodo.24433970
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24433970
+    description: "Zenodo Archive (Primary)"
+  - type: url
+    value: "https://github.com/gitdeeper15/aethersovereignty"
+    description: "GitHub Repository"
+authors:
+  - family-names: "Baladi"
+    given-names: "Samir"
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance"
+repository-code: "https://github.com/gitdeeper15/aethersovereignty"
+url: "https://doi.org/10.5281/zenodo.24433970"
+license: CC-BY-4.0
+keywords:
+  - sovereignty
+  - authority topology
+  - autonomous agents
+  - falsification-first
+  - architectural independence
+  - normative authority
+  - veto structure
+  - Aether family
+abstract: >-
+  AetherSovereignty is the eleventh candidate of the Aether family. It investigates
+  whether sovereignty — the structural responsibility that organizes authority,
+  normative reference, and veto relations within an autonomous agent system —
+  constitutes an independent architectural dimension, or whether it is merely an
+  emergent descriptive label for the interaction of existing dimensions.
+  Current status: Phase 0 (Conceptual Genesis and Methodological Reconstruction).
+  Decision: (E) Undetermined (interim).
+date-released: 2026-11-22

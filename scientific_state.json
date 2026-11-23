@@ -1,0 +1,28 @@
+{
+  "project": "AetherSovereignty",
+  "version": "1.0.0",
+  "status": "Phase 0 (Conceptual Genesis and Methodological Reconstruction — Complete; Falsification Not Started)",
+  "decision": "E_undetermined_interim",
+  "failure_conditions": {
+    "AS-F1": "NOT FALSIFIED (untested — functional duplication)",
+    "AS-F2": "NOT FALSIFIED (untested — reconstructability)",
+    "AS-F5": "NOT FALSIFIED (untested — emergent epistemic reducibility)"
+  },
+  "propositions": {
+    "P1": "near-trivial (not machine-checked)",
+    "P2": "substantive, cuts against independence (not machine-checked)"
+  },
+  "implementation": "none",
+  "experiments": "none",
+  "review": "none (independent review not started)",
+  "structural_dependency": [
+    "AetherGovern (foundational, unresolved boundary)",
+    "AetherIdentity (candidate, unresolved)"
+  ],
+  "testing_dichotomy": {
+    "H1": "Emergent Reducibility",
+    "H2": "Irreducible Architectural Responsibility"
+  },
+  "doi": "10.5281/zenodo.24433970",
+  "license": "CC-BY-4.0"
+}

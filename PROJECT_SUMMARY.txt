@@ -1,0 +1,117 @@
+═══════════════════════════════════════════════════════════════════════════
+  AetherSovereignty v1.0.0 — Project Summary
+═══════════════════════════════════════════════════════════════════════════
+
+  The Architectural Independence of Sovereignty
+  in Autonomous Agent Systems
+
+  Version        : 1.0.0 (Architectural Hypothesis)
+  Date           : 2026-11-22
+  Record ID      : AETHERSOVEREIGNTY-01
+  Position       : Eleventh candidate of the Aether family
+  Author         : Samir Baladi (gitdeeper@gmail.com)
+  ORCID          : 0009-0003-8903-0029
+  License        : CC-BY-4.0
+  Structural Dep.: AetherGovern (foundational, unresolved),
+                   AetherIdentity (candidate, unresolved)
+
+───────────────────────────────────────────────────────────────────────────
+  STATUS
+───────────────────────────────────────────────────────────────────────────
+
+  Architectural Hypothesis. Phase 0 (Conceptual Genesis and
+  Methodological Reconstruction Completed).
+
+  Decision: (E) Undetermined (interim).
+
+  No implementation, specification, test, or experiment is reported.
+
+───────────────────────────────────────────────────────────────────────────
+  CENTRAL QUESTION
+───────────────────────────────────────────────────────────────────────────
+
+  Does sovereignty — the structural responsibility that organizes
+  authority, normative reference, and veto relations within an
+  autonomous agent system — constitute an independent architectural
+  dimension, or is it merely an emergent descriptive label for the
+  interaction of existing dimensions?
+
+───────────────────────────────────────────────────────────────────────────
+  FOUR-LEVEL FUNCTIONAL STRATIFICATION
+───────────────────────────────────────────────────────────────────────────
+
+  L1 — Psychological Decision-Making
+       How decisions are generated.
+  L2 — Decision Authority
+       How conflicts are resolved.
+  L3 — Normative Authority
+       Where criteria originate.
+  L4 — Sovereignty Architecture
+       How levels L1–L3 are structurally related (hypothesized;
+       independence undetermined).
+
+───────────────────────────────────────────────────────────────────────────
+  TESTING DICHOTOMY
+───────────────────────────────────────────────────────────────────────────
+
+  H1 — Emergent Reducibility
+       Sovereignty is an emergent label; adds no independent
+       structural responsibility.
+
+  H2 — Irreducible Architectural Responsibility
+       A structural responsibility exists that cannot be fully
+       reconstructed from existing dimensions.
+
+───────────────────────────────────────────────────────────────────────────
+  FAILURE CONDITIONS (AS-F1 TO AS-F5)
+───────────────────────────────────────────────────────────────────────────
+
+  AS-F1  Functional Duplication                NOT FALSIFIED (untested)
+  AS-F2  Reconstructability                    NOT FALSIFIED (untested)
+  AS-F5  Emergent Epistemic Reducibility       NOT FALSIFIED (untested)
+
+───────────────────────────────────────────────────────────────────────────
+  INDEPENDENCE DECISION (PHASE 0)
+───────────────────────────────────────────────────────────────────────────
+
+  Classification : (E) Undetermined (interim)
+
+  The investigation has specified what would count for and against
+  the candidate; it has not yet produced the evidence either way.
+
+───────────────────────────────────────────────────────────────────────────
+  WHAT THIS PROJECT DOES NOT CLAIM
+───────────────────────────────────────────────────────────────────────────
+
+  - That AetherSovereignty is an independent architectural dimension.
+  - That the four-level stratification is evidence of four independent
+    components.
+  - That the boundaries with AetherGovern and AetherIdentity are
+    sufficient.
+  - That the gap is genuine.
+  - That implementation should begin.
+
+───────────────────────────────────────────────────────────────────────────
+  PHASE STATUS
+───────────────────────────────────────────────────────────────────────────
+
+  0  Conceptual Genesis                  Complete
+  1  Four-Level Stratification           Complete (analytical)
+  2  Independent Review                  Not started
+  3  Falsification Execution             Not started
+  4  Independence Decision               Interim: (E) Undetermined
+  5  Specification                       Not permitted
+  6  Implementation                      Not permitted
+
+───────────────────────────────────────────────────────────────────────────
+  LINKS
+───────────────────────────────────────────────────────────────────────────
+
+  GitHub    : https://github.com/gitdeeper15/aethersovereignty
+  Website   : https://aethersovereignty.netlify.app
+  ORCID     : https://orcid.org/0009-0003-8903-0029
+  Zenodo    : https://doi.org/10.5281/zenodo.24433970
+
+───────────────────────────────────────────────────────────────────────────
+  "AetherSovereignty is a candidate, not a result."
+═══════════════════════════════════════════════════════════════════════════

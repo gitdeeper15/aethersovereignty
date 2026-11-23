@@ -1,0 +1,13 @@
+[build]
+  publish = "PUBLICATION/Netlify/public"
+  command = "echo 'Static site — no build required'"
+
+[[redirects]]
+  from = "/paper.pdf"
+  to = "/assets/AetherSovereignty_Research_Paper_v1.0.0.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/paper"
+  to = "/assets/AetherSovereignty_Research_Paper_v1.0.0.pdf"
+  status = 200
