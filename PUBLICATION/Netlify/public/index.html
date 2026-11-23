@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherSovereignty — Architectural Independence</title>
+    <meta name="description" content="Falsification-first investigation of authority topology, normative reference, and veto structure in decentralized multi-agent systems.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+    <style>
+        /* Colors aligned with the Aether family standards */
+        :root {
+            --bg-page: #ffffff;
+            --bg-cream: #f8f9fa;         /* Neutral light grey — matches AetherHarness */
+            --text-black: #111111;
+            --text-grey: #555555;
+            --accent-navy: #1F3864;      /* Deep navy — primary */
+            --accent-navy-light: #2e4d7b;
+            --border-light: #e0e0e0;
+            --status-green: #2e7d32;
+            --status-yellow: #d4a843;
+            --status-red: #c62828;
+
+            --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+            --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --maxw: 840px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-black);
+            font-family: var(--serif);
+            font-size: 18px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent-navy); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { color: var(--accent-navy-light); border-bottom-color: var(--accent-navy-light); }
+
+        /* Navbar */
+        .navbar {
+            border-bottom: 1px solid var(--border-light);
+            background: var(--bg-page);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 1.15rem 1.5rem;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .logo { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; color: var(--text-black); text-decoration: none; border: none; }
+        .logo span { color: var(--accent-navy); }
+        .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+        .nav-links a { font-family: var(--mono); font-size: 0.78rem; color: var(--text-grey); text-transform: uppercase; letter-spacing: 0.08em; border: none; }
+        .nav-links a:hover { color: var(--text-black); }
+        .nav-links a.active { color: var(--accent-navy); border-bottom: 2px solid var(--accent-navy); padding-bottom: 2px; }
+
+        main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+        /* Hero */
+        .hero { padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-light); margin-bottom: 2.5rem; position: relative; }
+        .hero::before { content: ""; position: absolute; top: -3rem; left: 0; right: 0; height: 4px; background: var(--accent-navy); }
+        .hero .badge { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-grey); margin-bottom: 1.25rem; display: block; }
+        .hero h1 { font-family: var(--serif); font-size: 2.6rem; font-weight: 700; line-height: 1.15; margin-bottom: 0.75rem; color: var(--text-black); }
+        .hero .subtitle { font-style: italic; font-size: 1.15rem; color: var(--text-grey); margin-bottom: 1rem; }
+        .hero p { color: var(--text-grey); font-size: 1rem; }
+
+        /* Sections */
+        section { margin-bottom: 2.5rem; }
+        section h3 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-navy); margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border-light); }
+        p { margin-bottom: 1rem; }
+        blockquote { border-left: 4px solid var(--accent-navy); padding: 1rem; margin: 1.25rem 0; background: var(--bg-cream); font-style: italic; color: var(--text-black); }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-bottom: 1rem; background: var(--bg-page); border: 1px solid var(--border-light); }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+        th { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; background: var(--accent-navy); }
+        tr:nth-child(even) { background: var(--bg-cream); }
+
+        /* Lists */
+        ul { padding-inline-start: 1.4rem; margin-bottom: 1rem; }
+        li { margin: 0.3rem 0; }
+
+        /* Notes/Pills */
+        .note { border-left: 4px solid var(--accent-navy); padding: 1rem; background: var(--bg-cream); font-size: 0.95rem; color: var(--text-black); margin: 1.25rem 0; }
+        .pill { display: inline-block; font-family: var(--mono); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-light); background: var(--bg-cream); color: var(--text-grey); }
+        .pill.ok { color: var(--status-green); border-color: #a5d6a7; background: #e8f5e9; }
+        .pill.warn { color: var(--status-yellow); border-color: #ffe0b2; background: #fff3e0; }
+        .pill.bad { color: var(--status-red); border-color: #ffcdd2; background: #ffebee; }
+
+        /* Figures */
+        .figure-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 1.5rem 0; }
+        .figure-grid img { width: 100%; height: auto; border: 1px solid var(--border-light); background: var(--bg-page); }
+        .figure-grid .caption { font-size: 0.8rem; color: var(--text-grey); margin-top: 0.5rem; line-height: 1.4; }
+
+        /* Footer */
+        .footer { border-top: 2px solid var(--accent-navy); background: var(--bg-cream); color: var(--text-black); padding: 2.5rem 1.5rem 1rem; margin-top: 3rem; }
+        .footer-container { max-width: var(--maxw); margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+        .footer-brand h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--accent-navy); margin-bottom: 0.5rem; }
+        .footer-brand p { font-size: 0.9rem; color: var(--text-grey); }
+        .footer-section h3 { font-family: var(--mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-black); margin-bottom: 0.75rem; }
+        .footer-section ul { list-style: none; padding: 0; }
+        .footer-section a { font-size: 0.9rem; color: var(--text-grey); border: none; }
+        .footer-section a:hover { color: var(--accent-navy); }
+        .footer-bottom { max-width: var(--maxw); margin: 0 auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--mono); font-size: 0.72rem; color: var(--text-grey); text-transform: uppercase; }
+
+        @media (max-width: 680px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .footer-container { grid-template-columns: 1fr; gap: 1.5rem; }
+            .figure-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🏛️ <span>AetherSovereignty</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <span class="badge">Research Repository · v2.0.0 · Phase 0 Complete · Independent Review · Independence: Undetermined</span>
+            <h1>🏛️ AetherSovereignty</h1>
+            <p class="subtitle">The Architectural Independence of Sovereignty in Autonomous Agent Systems</p>
+            <p><em>A Falsification-First Investigation of Authority Topology, Normative Reference, and Veto Structure</em></p>
+        </div>
+
+        <section>
+            <h3>Status of this Repository</h3>
+            <blockquote>
+                <strong>Status: Phase 0 (Conceptual Genesis and Methodological Reconstruction — Complete).</strong> This is a <strong>research repository</strong>, not a software repository. No implementation is planned unless the architectural investigation supports it.
+                <br><br>
+                <strong>Decision: (E) undetermined (interim).</strong> No failure condition has been falsified; no observable benefit has been demonstrated.
+            </blockquote>
+            <p><em>"AetherSovereignty is a candidate, not a result."</em></p>
+        </section>
+
+        <section>
+            <h3>Overview</h3>
+            <p><strong>AetherSovereignty</strong> is the <strong>fourteenth candidate</strong> of the Aether family. It investigates whether a genuine architectural gap exists between the structural responsibility that organizes authority relations and the existing dimensions — particularly <strong>AetherGovern</strong> (rules), <strong>AetherIdentity</strong> (identity), and <strong>AetherRuntime</strong> (execution).</p>
+            <p><strong>AetherSovereignty is not a replacement for AetherGovern or AetherIdentity.</strong> All remain dimensions or candidates with their own status.</p>
+            <p>The paper (v2.0.0) is published on Zenodo: <a href="https://doi.org/10.5281/zenodo.24466801">10.5281/zenodo.24466801</a> and Figshare: <a href="https://doi.org/10.6084/m9.figshare.35091439">10.6084/m9.figshare.35091439</a>.</p>
+        </section>
+
+        <section>
+            <h3>Central Question</h3>
+            <blockquote>
+                Does sovereignty — the structural responsibility that organizes authority, normative reference, and veto relations within an autonomous agent system — constitute an independent architectural dimension, or is it merely an emergent descriptive label for the interaction of existing dimensions?
+            </blockquote>
+            <table>
+                <tr><th>Clause</th><th>Condition</th></tr>
+                <tr><td>(i) Not already covered by Govern / Identity / Runtime</td><td>AS-F1</td></tr>
+                <tr><td>(ii) Does not decompose into Govern + Identity + Runtime</td><td>AS-F2</td></tr>
+                <tr><td>(iii) No central sovereignty authority required</td><td>AS-F3 (embedded in H3)</td></tr>
+                <tr><td>(iv) No irreducible epistemic or architectural addition missing</td><td>AS-F5</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Four-Level Functional Stratification</h3>
+            <table>
+                <tr><th>Level</th><th>Name</th><th>Guiding Question</th></tr>
+                <tr><td>L1</td><td>Psychological Decision-Making</td><td>How are decisions generated?</td></tr>
+                <tr><td>L2</td><td>Decision Authority</td><td>How are conflicts resolved?</td></tr>
+                <tr><td>L3</td><td>Normative Authority</td><td>Where do criteria originate?</td></tr>
+                <tr><td>L4</td><td>Sovereignty Architecture</td><td>How are L1–L3 structurally related? (hypothesized; independence undetermined)</td></tr>
+            </table>
+            <div class="note">
+                <strong>Methodological guardrail.</strong> The existence of these four distinctions does <em>not</em> constitute evidence of an independent architectural entity. They serve strictly as analytical coordinates to test a core structural dilemma.
+            </div>
+        </section>
+
+        <section>
+            <h3>Testing Dichotomy</h3>
+            <table>
+                <tr><th>Hypothesis</th><th>Statement</th><th>Status</th></tr>
+                <tr><td>H1 — Emergent Reducibility</td><td>Sovereignty is an emergent descriptive label for the interaction of established psychological and architectural processes.</td><td><span class="pill warn">Untested</span></td></tr>
+                <tr><td>H2 — Irreducible Architectural Responsibility</td><td>A structural responsibility exists that cannot be fully reconstructed from the interaction of existing dimensions.</td><td><span class="pill warn">Untested</span></td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Falsification Criteria (AS-F1, AS-F2, AS-F5)</h3>
+            <table>
+                <tr><th>ID</th><th>Criterion</th><th>Status</th></tr>
+                <tr><td>AS-F1</td><td>Functional Duplication</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+                <tr><td>AS-F2</td><td>Reconstructability</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+                <tr><td>AS-F5</td><td>Emergent Epistemic Reducibility</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Decision (Phase 4, Interim)</h3>
+            <p><strong>AetherSovereignty is classified as (E) undetermined (interim).</strong></p>
+            <p>The evidence is insufficient to accept AetherSovereignty as an independent dimension, and insufficient to reject it.</p>
+            <div class="note">
+                <strong>"Undetermined" is not a failure.</strong> It states that the evidence is insufficient to decide, and names what is missing.
+            </div>
+        </section>
+
+        
+        <section>
+            <h3>Independent Review (Phase 2)</h3>
+            <p>Phase 2 of the investigation is <strong>in progress</strong>. The independent reviewer, <strong>Muhammad Talha</strong> (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), completed the review on <strong>2026-11-23</strong>.</p>
+            <p><strong>Recommendation:</strong> Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.</p>
+            <p><strong>Full review:</strong> <a href="https://github.com/gitdeeper15/aethersovereignty/blob/main/REVIEW/INDEPENDENT_REVIEW.md">REVIEW/INDEPENDENT_REVIEW.md</a></p>
+            <div class="note">
+                The review confirms that the documentation is transparent about its non-claims, open boundaries, and untested status, and that (E) Undetermined (interim) is warranted given that no failure condition is falsified yet no positive specification or empirical execution establishes independence or benefit.
+            </div>
+        </section>
+
+        <section>
+            <h3>Threats to Validity</h3>
+
+            <p>Seven threats are identified and documented openly (T1–T7). The most severe are T1 (author-on-author reasoning), T2 (no independent review), T6 (no measurement), and T7 (unresolved Govern and Identity).</p>
+        </section>
+
+        <section>
+            <h3>Figures</h3>
+            <div class="figure-grid">
+                <div><img src="assets/Fig1_Eleven_Dimensions.png" alt="Fig1"><div class="caption">Fig 1 — The Aether family: eleven dimensions and candidates</div></div>
+                <div><img src="assets/Fig2_Conceptual_Genesis.png" alt="Fig2"><div class="caption">Fig 2 — Conceptual genesis and methodological reconstruction</div></div>
+                <div><img src="assets/Fig3_Four_Levels.png" alt="Fig3"><div class="caption">Fig 3 — Four-level functional stratification</div></div>
+                <div><img src="assets/Fig4_Bracketing.png" alt="Fig4"><div class="caption">Fig 4 — Bracketing vs. replacement</div></div>
+                <div><img src="assets/Fig5_Testing_Dichotomy.png" alt="Fig5"><div class="caption">Fig 5 — The testing dichotomy</div></div>
+                <div><img src="assets/Fig6_Falsification_Procedure.png" alt="Fig6"><div class="caption">Fig 6 — Falsification procedure</div></div>
+                <div><img src="assets/Fig7_Phase_Status.png" alt="Fig7"><div class="caption">Fig 7 — Phase status and decision outcomes</div></div>
+                <div><img src="assets/Fig8_Overlap_Matrix.png" alt="Fig8"><div class="caption">Fig 8 — Overlap matrix: sovereignty vs. existing dimensions</div></div>
+                <div><img src="assets/Fig9_Evaluation_Design.png" alt="Fig9"><div class="caption">Fig 9 — Evaluation design: S1–S6 scenarios and M1–M6 metrics</div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AetherSovereignty</h3>
+                <p>The Architectural Independence of Sovereignty in Autonomous Agent Systems. A falsification-first investigation; the paper is a hypothesis, not a result.</p>
+                <p style="margin-top:1rem;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em">Version 2.0.0 · November 2026</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Repositories</h3>
+                <ul>
+                    <li><a href="https://github.com/gitdeeper15/aethersovereignty">GitHub</a></li>
+                    <li><a href="https://gitlab.com/gitdeeper15/aethersovereignty">GitLab</a></li>
+                    <li><a href="https://gitea.com/gitdeeper15/aethersovereignty">Gitea</a></li>
+                    <li><a href="https://codeberg.org/gitdeeper15/aethersovereignty">Codeberg</a></li>
+                    <li><a href="https://bitbucket.org/gitdeeper15/aethersovereignty">Bitbucket</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://doi.org/10.5281/zenodo.24466801">Zenodo DOI (v2.0.0)</a></li>
+                    <li><a href="https://doi.org/10.6084/m9.figshare.35091439">Figshare DOI (v1.0.0)</a></li>
+                    <li><a href="https://orcid.org/0009-0003-8903-0029">ORCID</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AetherSovereignty | Samir Baladi | CC-BY-4.0</p>
+        </div>
+    </footer>
+</body>
+</html>

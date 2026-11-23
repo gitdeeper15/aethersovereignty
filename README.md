@@ -67,7 +67,7 @@
 
 ## Overview
 
-**AetherSovereignty** is the **eleventh candidate** of the Aether family. It investigates whether a genuine architectural gap exists between **sovereignty** — the structural responsibility that organizes authority, normative reference, and veto relations — and the existing dimensions, in particular:
+**AetherSovereignty** is the **fifteenth candidate** of the Aether family. It investigates whether a genuine architectural gap exists between **sovereignty** — the structural responsibility that organizes authority, normative reference, and veto relations — and the existing dimensions, in particular:
 
 | Dimension | Concern |
 |---|---|
@@ -394,9 +394,9 @@ The comparison with the field is treated as open and is a reservation on AS-F1.
 
 ## Independent Review
 
-Phase 2 of the investigation is **in progress**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
 
-- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.
+- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 complete via this review.
 - **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
 - **Date:** 2026-11-23
 
@@ -406,9 +406,9 @@ The review confirms that the documentation is transparent about its non-claims, 
 
 ## Independent Review
 
-Phase 2 of the investigation is **in progress**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
 
-- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.
+- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 complete via this review.
 - **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
 - **Date:** 2026-11-23
 
@@ -421,7 +421,7 @@ The review confirms that the documentation is transparent about its non-claims, 
 | # | Threat | Description |
 |:-:|---|---|
 | T1 | Author-on-author reasoning | The hypothesis and the decision are written by the same author. |
-| T2 | No independent review | Phase 2 (independent review) has not started. |
+| T2 | No independent review | Resolved (Muhammad Talha, 2026-11-23). |
 | T3 | Small remainder | The H-F2 remainder may be an artifact of the analysis. |
 | T4 | Cooperative-human assumption | The investigation assumes cooperative human principals. |
 | T5 | Irreducible trust anchor | An irreducible trust anchor may exist that the four-level stratification does not cover. |
@@ -460,6 +460,7 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff), so GitHub shows 
 | **Website** | [aethersovereignty.netlify.app](https://aethersovereignty.netlify.app) |
 | **GitHub** | [gitdeeper15/aethersovereignty](https://github.com/gitdeeper15/aethersovereignty) |
 | **GitLab** | [gitlab.com/gitdeeper15/aethersovereignty](https://gitlab.com/gitdeeper15/aethersovereignty) |
+| **Gitea** | [gitea.com/gitdeeper15/aethersovereignty](https://gitea.com/gitdeeper15/aethersovereignty) |
 | **Codeberg** | [codeberg.org/gitdeeper15/aethersovereignty](https://codeberg.org/gitdeeper15/aethersovereignty) |
 | **Bitbucket** | [bitbucket.org/gitdeeper15/aethersovereignty](https://bitbucket.org/gitdeeper15/aethersovereignty) |
 | **Zenodo** (v2.0.0, current) | [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801) |

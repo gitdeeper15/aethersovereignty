@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherSovereignty — Reports</title>
+    <meta name="description" content="Architectural investigation reports, decision summary, and published paper for AetherSovereignty.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+    <style>
+        :root {
+            --bg-page: #ffffff;
+            --bg-cream: #f8f9fa;         /* Neutral light grey — matches AetherHarness */
+            --text-black: #111111;
+            --text-grey: #555555;
+            --accent-navy: #1F3864;      /* Deep navy — primary */
+            --accent-navy-light: #2e4d7b;
+            --border-light: #e0e0e0;
+            --status-green: #2e7d32;
+            --status-yellow: #d4a843;
+            --status-red: #c62828;
+            --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+            --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --maxw: 840px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-page); color: var(--text-black); font-family: var(--serif); font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        a { color: var(--accent-navy); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { color: var(--accent-navy-light); border-bottom-color: var(--accent-navy-light); }
+
+        .navbar { border-bottom: 1px solid var(--border-light); background: var(--bg-page); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: var(--maxw); margin: 0 auto; padding: 1.15rem 1.5rem; display: flex; align-items: baseline; justify-content: space-between; }
+        .logo { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; color: var(--text-black); text-decoration: none; border: none; }
+        .logo span { color: var(--accent-navy); }
+        .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+        .nav-links a { font-family: var(--mono); font-size: 0.78rem; color: var(--text-grey); text-transform: uppercase; letter-spacing: 0.08em; border: none; }
+        .nav-links a:hover { color: var(--text-black); }
+        .nav-links a.active { color: var(--accent-navy); border-bottom: 2px solid var(--accent-navy); padding-bottom: 2px; }
+
+        main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+        .hero { padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-light); margin-bottom: 2.5rem; }
+        .hero .badge { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-grey); margin-bottom: 1.25rem; display: block; }
+        .hero h1 { font-family: var(--serif); font-size: 2.6rem; font-weight: 700; line-height: 1.15; margin-bottom: 0.75rem; color: var(--text-black); }
+        .hero .subtitle { font-style: italic; font-size: 1.15rem; color: var(--text-grey); margin-bottom: 1rem; }
+        .hero p { color: var(--text-grey); font-size: 1rem; }
+
+        section { margin-bottom: 2.5rem; }
+        section h3 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-navy); margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border-light); }
+
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-bottom: 1rem; background: var(--bg-page); border: 1px solid var(--border-light); }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+        th { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; background: var(--accent-navy); }
+        tr:nth-child(even) { background: var(--bg-cream); }
+
+        .pill { display: inline-block; font-family: var(--mono); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-light); background: var(--bg-cream); color: var(--text-grey); }
+        .pill.ok { color: var(--status-green); border-color: #a5d6a7; background: #e8f5e9; }
+        .pill.warn { color: var(--status-yellow); border-color: #ffe0b2; background: #fff3e0; }
+        .pill.bad { color: var(--status-red); border-color: #ffcdd2; background: #ffebee; }
+
+        .note { border-left: 4px solid var(--accent-navy); padding: 1rem; background: var(--bg-cream); font-size: 0.95rem; color: var(--text-black); margin: 1.25rem 0; }
+
+        pre { background: var(--bg-cream); padding: 1rem 1.15rem; overflow-x: auto; margin: 1rem 0; font-family: var(--mono); font-size: 0.85rem; line-height: 1.65; border-left: 4px solid var(--accent-navy); color: var(--text-black); }
+
+        .footer { border-top: 2px solid var(--accent-navy); background: var(--bg-cream); color: var(--text-black); padding: 2.5rem 1.5rem 1rem; margin-top: 3rem; }
+        .footer-container { max-width: var(--maxw); margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+        .footer-brand h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--accent-navy); margin-bottom: 0.5rem; }
+        .footer-brand p { font-size: 0.9rem; color: var(--text-grey); }
+        .footer-section h3 { font-family: var(--mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-black); margin-bottom: 0.75rem; }
+        .footer-section ul { list-style: none; padding: 0; }
+        .footer-section a { font-size: 0.9rem; color: var(--text-grey); border: none; }
+        .footer-section a:hover { color: var(--accent-navy); }
+        .footer-bottom { max-width: var(--maxw); margin: 0 auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--mono); font-size: 0.72rem; color: var(--text-grey); text-transform: uppercase; }
+
+        @media (max-width: 680px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .footer-container { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🏛️ <span>AetherSovereignty</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <span class="badge">Reports · v2.0.0 · Phase 0 Complete · Independent Review</span>
+            <h1>📄 Reports</h1>
+            <p class="subtitle">Architectural investigation outputs</p>
+            <p>Reports produced during the falsification-first investigation. No experiment has been executed; the Section 11 evaluation design in the paper is a proposal.</p>
+        </div>
+
+        <section>
+            <h3>Available Reports</h3>
+            <table>
+                <tr><th>Report</th><th>Type</th><th>Status</th></tr>
+                <tr><td>Architectural Investigation Report</td><td>Internal</td><td><span class="pill warn">Pending</span></td></tr>
+                <tr><td>Independence Decision (Phase 4)</td><td>Decision</td><td><span class="pill warn">Interim</span></td></tr>
+                <tr><td>Internal Review</td><td>Review</td><td><span class="pill warn">Internal only</span></td></tr>
+                <tr><td>Independent Review</td><td>Review</td><td><span class="pill ok">Complete (Muhammad Talha, 2026-11-23)</span></td></tr>
+                <tr><td>AS-F1 Functional Duplication Analysis</td><td>Falsification</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+                <tr><td>AS-F2 Reconstructability Analysis</td><td>Falsification</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+                <tr><td>AS-F5 Emergent Epistemic Reducibility Analysis</td><td>Falsification</td><td><span class="pill bad">NOT FALSIFIED (untested)</span></td></tr>
+                <tr><td>Evaluation Report</td><td>Experiment</td><td><span class="pill bad">Not permitted</span></td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Investigation Report — Summary</h3>
+            <pre>Report     : paper/AetherSovereignty_Research_Paper_v2.0.0.md
+Phase      : 0 (Conceptual Genesis and Methodological Reconstruction) — complete
+Decision   : (E) undetermined (interim)
+Tests run  : 0 (AS-F1, AS-F2, AS-F5 all untested)
+Claims     : none asserted
+Output     : decision + open questions Q1–Q10</pre>
+        </section>
+
+        <section>
+            <h3>Decision Report — Summary</h3>
+            <pre>File       : records/methodological_status_record.md
+Verdict    : (E) undetermined (interim)
+Why not (A) accept:
+  - AS-F1, AS-F2, AS-F5 all untested.
+  - H-F4 (observable benefit) untested.
+  - P1 near-trivial; P2 cuts against independence.
+  - AetherGovern and AetherIdentity unresolved.
+Why not (R) reject:
+  - No failure condition falsified.
+  - The H-F2 remainder was observed.
+  - H-F3 did not require centralization.</pre>
+        </section>
+
+        <section>
+            <h3>Independent Review (Phase 2)</h3>
+            <pre>Reviewer   : Muhammad Talha (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol)
+Date       : 2026-11-23
+Status     : Complete
+Outcome    : Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.
+
+Full review: REVIEW/INDEPENDENT_REVIEW.md
+
+Documented threats:
+  T1: author-on-author reasoning (High)
+  T2: no independent review (Resolved: independent review completed 2026-11-23)
+  T3: small remainder (Medium)
+  T4: cooperative-human assumption (Medium)
+  T5: irreducible trust anchor (Medium)
+  T6: no measurement (High)
+  T7: unresolved Govern and Identity (High)</pre>
+        </section>
+
+        <section>
+            <h3>Falsification Criteria (Phase 3, Not Started)</h3>
+            <pre>AS-F1 (Functional Duplication)      : NOT FALSIFIED (untested)
+AS-F2 (Reconstructability)          : NOT FALSIFIED (untested)
+AS-F5 (Emergent Epistemic Reducibility) : NOT FALSIFIED (untested)
+
+Status: no falsification test has been executed.
+Phase 0 is complete; Phase 3 is not authorized.</pre>
+        </section>
+
+        <section>
+            <h3>Published Paper</h3>
+            <table>
+                <tr><th>Version</th><th>Venue</th><th>DOI</th></tr>
+                <tr><td>v2.0.0</td><td>Zenodo</td><td><a href="https://doi.org/10.5281/zenodo.24466801">10.5281/zenodo.24466801</a></td></tr>
+                <tr><td>v2.0.0</td><td>Figshare</td><td><a href="https://doi.org/10.6084/m9.figshare.35091439">10.6084/m9.figshare.35091439</a></td></tr>
+            </table>
+            <div class="note">
+                <strong>The paper is a hypothesis, not a result.</strong> It specifies what would count for and against the candidate; it does not establish independence or benefit.
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AetherSovereignty</h3>
+                <p>The Architectural Independence of Sovereignty in Autonomous Agent Systems. A falsification-first investigation; the paper is a hypothesis, not a result.</p>
+                <p style="margin-top:1rem;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em">Version 2.0.0 · November 2026</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Repositories</h3>
+                <ul>
+                    <li><a href="https://github.com/gitdeeper15/aethersovereignty">GitHub</a></li>
+                    <li><a href="https://gitlab.com/gitdeeper15/aethersovereignty">GitLab</a></li>
+                    <li><a href="https://gitea.com/gitdeeper15/aethersovereignty">Gitea</a></li>
+                    <li><a href="https://codeberg.org/gitdeeper15/aethersovereignty">Codeberg</a></li>
+                    <li><a href="https://bitbucket.org/gitdeeper15/aethersovereignty">Bitbucket</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://doi.org/10.5281/zenodo.24466801">Zenodo DOI (v2.0.0)</a></li>
+                    <li><a href="https://doi.org/10.6084/m9.figshare.35091439">Figshare DOI (v2.0.0)</a></li>
+                    <li><a href="https://orcid.org/0009-0003-8903-0029">ORCID</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AetherSovereignty | Samir Baladi | CC-BY-4.0</p>
+        </div>
+    </footer>
+</body>
+</html>
