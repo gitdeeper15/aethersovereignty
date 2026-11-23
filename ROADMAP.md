@@ -1,6 +1,6 @@
 # AetherSovereignty — Roadmap
 
-**Version:** 1.0.0
+**Version:** 2.0.0
 **Phase:** 0 (Conceptual Genesis and Methodological Reconstruction Completed)
 **Decision:** (E) Undetermined (interim)
 
@@ -43,4 +43,4 @@ The results will be recorded in `FALSIFICATION/AS-Fx_RESULT.md` (directory not y
 
 **AetherSovereignty v2.0.0 — Roadmap**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)
+DOI: [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)

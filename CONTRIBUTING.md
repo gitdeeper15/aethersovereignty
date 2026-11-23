@@ -9,7 +9,7 @@ AetherSovereignty is at **Phase 0 (Conceptual Genesis and Methodological Reconst
 At this phase, the following contributions are welcome:
 
 1. **Execution of failure conditions** (Phase 3): AS-F1 (Functional Duplication), AS-F2 (Reconstructability), and AS-F5 (Emergent Epistemic Reducibility).
-2. **Independent review** of the hypothesis, the four-level stratification, and the falsification plan. (Phase 2 has not started; external review is welcome.)
+2. **Independent review** of the hypothesis, the four-level stratification, and the falsification plan. (Phase 2 is complete (Muhammad Talha, 2026-11-23).)
 3. **Citation corrections** — if you find a missing or incorrect reference.
 4. **Typo fixes** and minor clarifications.
 5. **Threat identification** — additional threats to validity (T8+) not covered by the current register (T1–T7).
@@ -41,4 +41,4 @@ A contribution that says "this hypothesis is wrong because X" is more valuable t
 
 **AetherSovereignty v2.0.0**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)
+DOI: [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)

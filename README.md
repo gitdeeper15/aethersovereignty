@@ -15,7 +15,7 @@
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0003--8903--0029-a6ce39?logo=orcid&logoColor=white)](https://orcid.org/0009-0003-8903-0029)
 
 ![Status](https://img.shields.io/badge/Status-Phase%200%20Complete-blue)
-![Version](https://img.shields.io/badge/Version-1.0.0-green)
+![Version](https://img.shields.io/badge/Version-2.0.0-green)
 ![Phase](https://img.shields.io/badge/Phase-Conceptual%20Genesis-orange)
 ![Decision](https://img.shields.io/badge/Decision-%28E%29%20Undetermined-yellow)
 ![Implementation](https://img.shields.io/badge/Implementation-Not%20Authorized-red)
@@ -394,7 +394,7 @@ The comparison with the field is treated as open and is a reservation on AS-F1.
 
 ## Independent Review
 
-Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v2.0.0.
 
 - **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 complete via this review.
 - **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
@@ -406,7 +406,7 @@ The review confirms that the documentation is transparent about its non-claims, 
 
 ## Independent Review
 
-Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+Phase 2 of the investigation is **complete**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v2.0.0.
 
 - **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 complete via this review.
 - **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
@@ -439,7 +439,7 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff), so GitHub shows 
   author    = {Baladi, Samir},
   title     = {AetherSovereignty: The Architectural Independence of Sovereignty in Autonomous Agent Systems},
   year      = {2026},
-  version   = {1.0.0},
+  version   = {2.0.0},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.24466801},
   url       = {https://doi.org/10.5281/zenodo.24466801},

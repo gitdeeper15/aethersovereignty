@@ -17,7 +17,7 @@ Interdisciplinary AI Researcher, Ronin Institute / Rite of Renaissance
 
 ## Reviewers
 
-**Independent Reviewer:** None at this time. Phase 2 (independent review) has not started. This is documented as threat T2 (no independent review) in the paper.
+**Independent Reviewer:** Muhammad Talha (2026-11-23). Phase 2 (independent review) is complete.
 
 ## How to Contribute
 
@@ -27,4 +27,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 **AetherSovereignty v2.0.0**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)
+DOI: [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)

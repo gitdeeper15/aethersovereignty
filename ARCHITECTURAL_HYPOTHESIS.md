@@ -1,7 +1,7 @@
 # AetherSovereignty — Architectural Hypothesis
 
 **Status:** Phase 0 — Architectural Hypothesis (Complete)
-**Version:** 1.0.0
+**Version:** 2.0.0
 **Date:** 2026-11-22
 **Author:** Samir Baladi
 **ORCID:** [0009-0003-8903-0029](https://orcid.org/0009-0003-8903-0029)
@@ -26,7 +26,7 @@ The next steps are: independent review of this hypothesis, execution of the fals
 
 ## 1. Position in the Aether family
 
-The Aether family currently has **seven foundational dimensions**, **three candidates** (Identity, Policy, Audit), and **this candidate** (Sovereignty, eleventh).
+The Aether family currently has **seven foundational dimensions**, **three candidates** (Identity, Policy, Audit), and **this candidate** (Sovereignty, fifteenth).
 
 | # | Project | Status |
 |---|---|---|
@@ -42,7 +42,7 @@ The Aether family currently has **seven foundational dimensions**, **three candi
 | 10 | AetherAudit | Candidate |
 | 11 | **AetherSovereignty** | **Candidate (this document; Phase 0)** |
 
-AetherSovereignty is the **eleventh project**. It is **not** a replacement for AetherGovern, AetherIdentity, or any other dimension.
+AetherSovereignty is the **fifteenth project**. It is **not** a replacement for AetherGovern, AetherIdentity, or any other dimension.
 
 ### 1.1 Structural dependency
 
@@ -127,7 +127,7 @@ This document claims only that the hypothesis is worth investigating under the s
 | # | Threat | Description |
 |:-:|---|---|
 | **T1** | Author-on-author reasoning | The hypothesis and the decision are written by the same author. |
-| **T2** | No independent review | Phase 2 (independent review) has not started. |
+| **T2** | No independent review | Phase 2 (independent review) is complete (Muhammad Talha, 2026-11-23). |
 | **T3** | Structural dependency on AetherGovern and AetherIdentity | Both are unresolved; any conclusion is conditional. |
 | **T4** | Cooperative-human assumption | The investigation assumes cooperative human principals. |
 | **T5** | Irreducible trust anchor | An irreducible trust anchor may exist that the four-level stratification does not cover. |
@@ -186,4 +186,4 @@ These are initial questions. They are not final.
 
 **AetherSovereignty v2.0.0 — Architectural Hypothesis (Complete)**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: 10.5281/zenodo.24433970
+DOI: 10.5281/zenodo.24466801

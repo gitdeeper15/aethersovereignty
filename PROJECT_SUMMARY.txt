@@ -1,11 +1,11 @@
 ═══════════════════════════════════════════════════════════════════════════
-  AetherSovereignty v1.0.0 — Project Summary
+  AetherSovereignty v2.0.0 — Project Summary
 ═══════════════════════════════════════════════════════════════════════════
 
   The Architectural Independence of Sovereignty
   in Autonomous Agent Systems
 
-  Version        : 1.0.0 (Architectural Hypothesis)
+  Version        : 2.0.0 (Architectural Hypothesis)
   Date           : 2026-11-22
   Record ID      : AETHERSOVEREIGNTY-01
   Position       : Eleventh candidate of the Aether family
@@ -110,7 +110,7 @@
   GitHub    : https://github.com/gitdeeper15/aethersovereignty
   Website   : https://aethersovereignty.netlify.app
   ORCID     : https://orcid.org/0009-0003-8903-0029
-  Zenodo    : https://doi.org/10.5281/zenodo.24433970
+  Zenodo    : https://doi.org/10.5281/zenodo.24466801
 
 ───────────────────────────────────────────────────────────────────────────
   "AetherSovereignty is a candidate, not a result."

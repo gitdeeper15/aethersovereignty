@@ -55,6 +55,7 @@
 | `records/` | `methodological_status_record.md` | Complete |
 | `paper/` | Research paper (`.md`, `.pdf`, `.html`), `style.css`, `generate_pdf.py`, `insert_figures.py` | Complete |
 | `REVIEW/` | `INDEPENDENT_REVIEW.md` (Muhammad Talha, 2026-11-23) | Complete |
+| `PUBLICATION/Netlify/public/` | `index.html`, `dashboard.html`, `reports.html`, `documentation.html`, `assets/` | Complete |
 
 ---
 
@@ -82,7 +83,34 @@ AetherSovereignty is the **fifteenth candidate** of the Aether family.
 
 ---
 
+## Independent Review
+
+| Item | Value |
+|---|---|
+| Reviewer | Muhammad Talha (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol) |
+| Date | 2026-11-23 |
+| Status | Complete |
+| Recommendation | Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 complete via this review |
+| T2 (No independent review) | **Resolved** |
+
+---
+
+## Platforms & Mirrors
+
+| Platform | URL | Status |
+|---|---|---|
+| GitHub | https://github.com/gitdeeper15/aethersovereignty | ✅ Active |
+| GitLab | https://gitlab.com/gitdeeper15/aethersovereignty | ✅ Active |
+| Gitea | https://gitea.com/gitdeeper15/aethersovereignty | ✅ Active |
+| Codeberg | https://codeberg.org/gitdeeper15/aethersovereignty | ✅ Active |
+| Bitbucket | https://bitbucket.org/gitdeeper15/aethersovereignty | ✅ Active |
+| Zenodo | https://doi.org/10.5281/zenodo.24466801 | ✅ Published |
+| Figshare | https://doi.org/10.6084/m9.figshare.35091439 | ✅ Published |
+| Website | https://aethersovereignty.netlify.app | ✅ Active |
+
+---
+
 **AetherSovereignty v2.0.0**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)
-Figshare: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)
+Zenodo DOI (v2.0.0): [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)
+Figshare DOI: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)

@@ -9,8 +9,8 @@ identifiers:
     value: 10.5281/zenodo.24466801
     description: "Zenodo Archive (v2.0.0, Primary)"
   - type: doi
-    value: 10.5281/zenodo.24433970
-    description: "Zenodo Archive (v1.0.0)"
+    value: 10.5281/zenodo.24466801
+    description: "Zenodo Archive (v2.0.0)"
   - type: doi
     value: 10.6084/m9.figshare.35091439
     description: "Figshare Mirror"

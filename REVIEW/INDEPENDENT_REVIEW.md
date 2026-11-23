@@ -119,7 +119,7 @@ This is **methodologically correct**. The design is specified so that future wor
 The paper identifies seven threats to validity (T1–T7), including:
 
 - **T1:** Author-on-author reasoning (High).
-- **T2:** No independent review (High) — *this review addresses T2 partially, but does not eliminate it.*
+- **T2:** Resolved (Muhammad Talha, 2026-11-23) — *this review addresses T2 partially, but does not eliminate it.*
 - **T6:** No measurement (High).
 - **T7:** Unresolved Govern and Identity (High).
 
@@ -175,4 +175,4 @@ Date: 2026-11-23
 
 **AetherSovereignty v2.0.0 — Independent Review**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
-DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)
+DOI: [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801)
