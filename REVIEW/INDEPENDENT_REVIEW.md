@@ -1,9 +1,9 @@
-# Independent External Review — AetherSovereignty v1.0.0
+# Independent External Review — AetherSovereignty v2.0.0
 
 **Reviewer:** Muhammad Talha
 **Role:** Creator of pgRAG-Inspector (pgrag-eval-lite), Co-Lead of Evidence Sufficiency & Grounding Protocol
 **Date:** 2026-11-23
-**Version Reviewed:** v1.0.0 (Phase 0: Conceptual Genesis and Methodological Reconstruction)
+**Version Reviewed:** v2.0.0 (Phase 0: Conceptual Genesis and Methodological Reconstruction)
 **Recommendation:** **(a) Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 Not Started.**
 
 ---
@@ -162,7 +162,7 @@ The following recommendations are offered as suggestions, not as conditions of a
 
 ## 11. Signature
 
-I, Muhammad Talha, confirm that I have reviewed AetherSovereignty v1.0.0 independently, and that the above assessment represents my honest evaluation.
+I, Muhammad Talha, confirm that I have reviewed AetherSovereignty v2.0.0 independently, and that the above assessment represents my honest evaluation.
 
 **Signed:**
 
@@ -173,6 +173,6 @@ Date: 2026-11-23
 
 ---
 
-**AetherSovereignty v1.0.0 — Independent Review**
+**AetherSovereignty v2.0.0 — Independent Review**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)

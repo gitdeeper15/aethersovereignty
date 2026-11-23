@@ -25,6 +25,6 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ---
 
-**AetherSovereignty v1.0.0**
+**AetherSovereignty v2.0.0**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)

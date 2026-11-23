@@ -23,7 +23,7 @@
 
 <br>
 
-**[Website](https://aethersovereignty.netlify.app)** · **[Paper (PDF)](paper/AetherSovereignty_Research_Paper_v1.0.0.pdf)** · **[Zenodo](https://doi.org/10.5281/zenodo.24433970)** · **[Figshare](https://doi.org/10.6084/m9.figshare.35091439)** · **[Status](records/methodological_status_record.md)**
+**[Website](https://aethersovereignty.netlify.app)** · **[Paper (PDF)](paper/AetherSovereignty_Research_Paper_v2.0.0.pdf)** · **[Zenodo](https://doi.org/10.5281/zenodo.24433970)** · **[Figshare](https://doi.org/10.6084/m9.figshare.35091439)** · **[Status](records/methodological_status_record.md)**
 
 <br>
 
@@ -87,9 +87,9 @@ This repository contains **no** `src/`, `tests/` or `experiments/`. It **does** 
 
 | | |
 |---|---|
-| **Current release** | v1.0.0 — [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
+| **Current release** | v2.0.0 — [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
 | **Paper** | 16 sections + 3 appendices · ~7,200 words · 9 figures · 7 tables · 25 references |
-| **PDF in this repo** | [`paper/AetherSovereignty_Research_Paper_v1.0.0.pdf`](paper/AetherSovereignty_Research_Paper_v1.0.0.pdf) |
+| **PDF in this repo** | [`paper/AetherSovereignty_Research_Paper_v2.0.0.pdf`](paper/AetherSovereignty_Research_Paper_v2.0.0.pdf) |
 | **Website** | [aethersovereignty.netlify.app](https://aethersovereignty.netlify.app) |
 
 ---
@@ -306,9 +306,9 @@ AetherSovereignty/
 │   └── methodological_status_record.md
 │
 ├── paper/
-│   ├── AetherSovereignty_Research_Paper_v1.0.0.md
-│   ├── AetherSovereignty_Research_Paper_v1.0.0.pdf
-│   ├── AetherSovereignty_Research_Paper_v1.0.0.html
+│   ├── AetherSovereignty_Research_Paper_v2.0.0.md
+│   ├── AetherSovereignty_Research_Paper_v2.0.0.pdf
+│   ├── AetherSovereignty_Research_Paper_v2.0.0.html
 │   ├── style.css
 │   ├── generate_pdf.py
 │   └── insert_figures.py
@@ -392,6 +392,18 @@ The comparison with the field is treated as open and is a reservation on AS-F1.
 
 ---
 
+## Independent Review
+
+Phase 2 of the investigation is **in progress**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+
+- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.
+- **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
+- **Date:** 2026-11-23
+
+The review confirms that the documentation is transparent about its non-claims, open boundaries, and untested status, and that `(E) Undetermined (interim)` is warranted given that no failure condition is falsified yet no positive specification or empirical execution establishes independence or benefit.
+
+---
+
 ## Threats to Validity
 
 | # | Threat | Description |
@@ -438,7 +450,7 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff), so GitHub shows 
 | **GitLab** | [gitlab.com/gitdeeper15/aethersovereignty](https://gitlab.com/gitdeeper15/aethersovereignty) |
 | **Codeberg** | [codeberg.org/gitdeeper15/aethersovereignty](https://codeberg.org/gitdeeper15/aethersovereignty) |
 | **Bitbucket** | [bitbucket.org/gitdeeper15/aethersovereignty](https://bitbucket.org/gitdeeper15/aethersovereignty) |
-| **Zenodo** (v1.0.0, current) | [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) |
+| **Zenodo** (v2.0.0, current) | [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) |
 | **Figshare** (alternative DOI) | [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439) |
 
 ---
@@ -451,11 +463,11 @@ CC-BY-4.0 (this document) · MIT (code — future; none in this release).
 
 <div align="center">
 
-**AetherSovereignty v1.0.0** — The Architectural Independence of Sovereignty
+**AetherSovereignty v2.0.0** — The Architectural Independence of Sovereignty
 
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 
-Zenodo DOI (v1.0.0): [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) · Figshare DOI: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)
+Zenodo DOI (v2.0.0): [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) · Figshare DOI: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)
 
 ***AetherSovereignty is a candidate, not a result.***
 

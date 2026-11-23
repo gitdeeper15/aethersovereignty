@@ -184,6 +184,6 @@ These are initial questions. They are not final.
 
 ---
 
-**AetherSovereignty v1.0.0 — Architectural Hypothesis (Complete)**
+**AetherSovereignty v2.0.0 — Architectural Hypothesis (Complete)**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 DOI: 10.5281/zenodo.24433970

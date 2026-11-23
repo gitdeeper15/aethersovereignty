@@ -25,7 +25,7 @@ At this phase, the following contributions are welcome:
 ## How to Contribute
 
 1. Open an issue describing the contribution.
-2. Reference the relevant section of the paper (`paper/AetherSovereignty_Research_Paper_v1.0.0.md`) or the hypothesis document (`ARCHITECTURAL_HYPOTHESIS.md`).
+2. Reference the relevant section of the paper (`paper/AetherSovereignty_Research_Paper_v2.0.0.md`) or the hypothesis document (`ARCHITECTURAL_HYPOTHESIS.md`).
 3. Submit a pull request.
 4. Wait for review.
 
@@ -39,6 +39,6 @@ A contribution that says "this hypothesis is wrong because X" is more valuable t
 
 ---
 
-**AetherSovereignty v1.0.0**
+**AetherSovereignty v2.0.0**
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 DOI: [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970)
