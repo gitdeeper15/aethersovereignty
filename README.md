@@ -8,7 +8,7 @@
 
 <br>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24433970.svg)](https://doi.org/10.5281/zenodo.24433970)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24466801.svg)](https://doi.org/10.5281/zenodo.24466801)
 [![Figshare](https://img.shields.io/badge/Figshare-10.6084%2Fm9.figshare.35091439-blue)](https://doi.org/10.6084/m9.figshare.35091439)
 [![Website](https://img.shields.io/badge/Website-aethersovereignty.netlify.app-00C7B7?logo=netlify&logoColor=white)](https://aethersovereignty.netlify.app)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -23,7 +23,7 @@
 
 <br>
 
-**[Website](https://aethersovereignty.netlify.app)** · **[Paper (PDF)](paper/AetherSovereignty_Research_Paper_v2.0.0.pdf)** · **[Zenodo](https://doi.org/10.5281/zenodo.24433970)** · **[Figshare](https://doi.org/10.6084/m9.figshare.35091439)** · **[Status](records/methodological_status_record.md)**
+**[Website](https://aethersovereignty.netlify.app)** · **[Paper (PDF)](paper/AetherSovereignty_Research_Paper_v2.0.0.pdf)** · **[Zenodo](https://doi.org/10.5281/zenodo.24466801)** · **[Figshare](https://doi.org/10.6084/m9.figshare.35091439)** · **[Status](records/methodological_status_record.md)**
 
 <br>
 
@@ -87,7 +87,7 @@ This repository contains **no** `src/`, `tests/` or `experiments/`. It **does** 
 
 | | |
 |---|---|
-| **Current release** | v2.0.0 — [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
+| **Current release** | v2.0.0 — [Zenodo](https://doi.org/10.5281/zenodo.24466801) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
 | **Paper** | 16 sections + 3 appendices · ~7,200 words · 9 figures · 7 tables · 25 references |
 | **PDF in this repo** | [`paper/AetherSovereignty_Research_Paper_v2.0.0.pdf`](paper/AetherSovereignty_Research_Paper_v2.0.0.pdf) |
 | **Website** | [aethersovereignty.netlify.app](https://aethersovereignty.netlify.app) |
@@ -388,7 +388,7 @@ The comparison with the field is treated as open and is a reservation on AS-F1.
 | 12 | AetherMemory | Candidate | [10.5281/zenodo.24372288](https://doi.org/10.5281/zenodo.24372288) |
 | 13 | AetherIntent | Candidate | [10.5281/zenodo.24417251](https://doi.org/10.5281/zenodo.24417251) |
 | 14 | AetherHarness | Candidate | [10.5281/zenodo.24425655](https://doi.org/10.5281/zenodo.24425655) |
-| 15 | **AetherSovereignty** | Candidate (this repository) | [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
+| 15 | **AetherSovereignty** | Candidate (this repository) | [Zenodo](https://doi.org/10.5281/zenodo.24466801) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
 
 ---
 
@@ -441,8 +441,8 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff), so GitHub shows 
   year      = {2026},
   version   = {1.0.0},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.24433970},
-  url       = {https://doi.org/10.5281/zenodo.24433970},
+  doi       = {10.5281/zenodo.24466801},
+  url       = {https://doi.org/10.5281/zenodo.24466801},
   note      = {Alternative DOI: https://doi.org/10.6084/m9.figshare.35091439; Conceptual genesis; (E) Undetermined (interim)}
 }
 ```
@@ -462,7 +462,7 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff), so GitHub shows 
 | **GitLab** | [gitlab.com/gitdeeper15/aethersovereignty](https://gitlab.com/gitdeeper15/aethersovereignty) |
 | **Codeberg** | [codeberg.org/gitdeeper15/aethersovereignty](https://codeberg.org/gitdeeper15/aethersovereignty) |
 | **Bitbucket** | [bitbucket.org/gitdeeper15/aethersovereignty](https://bitbucket.org/gitdeeper15/aethersovereignty) |
-| **Zenodo** (v2.0.0, current) | [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) |
+| **Zenodo** (v2.0.0, current) | [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801) |
 | **Figshare** (alternative DOI) | [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439) |
 
 ---
@@ -479,7 +479,7 @@ CC-BY-4.0 (this document) · MIT (code — future; none in this release).
 
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 
-Zenodo DOI (v2.0.0): [10.5281/zenodo.24433970](https://doi.org/10.5281/zenodo.24433970) · Figshare DOI: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)
+Zenodo DOI (v2.0.0): [10.5281/zenodo.24466801](https://doi.org/10.5281/zenodo.24466801) · Figshare DOI: [10.6084/m9.figshare.35091439](https://doi.org/10.6084/m9.figshare.35091439)
 
 ***AetherSovereignty is a candidate, not a result.***
 

@@ -20,6 +20,9 @@
     "recommendation": "Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review"
   },
   "structural_dependency": ["AetherGovern (foundational, unresolved)", "AetherIdentity (candidate, unresolved)"],
-  "doi": "10.5281/zenodo.24433970",
+  "doi": "10.5281/zenodo.24466801",
+  "doi_v1": "10.5281/zenodo.24433970",
+  "doi_all_versions": "10.5281/zenodo.24433969",
+  "doi_figshare": "10.6084/m9.figshare.35091439",
   "license": "CC-BY-4.0"
 }
