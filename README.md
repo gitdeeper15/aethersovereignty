@@ -374,17 +374,21 @@ The comparison with the field is treated as open and is a reservation on AS-F1.
 
 | # | Project | Status | DOI |
 |:-:|---|---|---|
-| 1 | AetherGit | Foundational | — |
-| 2 | AetherFlow | Foundational | — |
-| 3 | AetherProof | Foundational | — |
-| 4 | AetherMesh | Foundational | — |
-| 5 | AetherGovern | Foundational | — |
-| 6 | AetherRuntime | Foundational | — |
-| 7 | AetherOrchestrate | Foundational | — |
-| 8 | AetherIdentity | Candidate | — |
-| 9 | AetherPolicy | Candidate | — |
-| 10 | AetherAudit | Candidate | — |
-| 11 | **AetherSovereignty** | Candidate (this repository) | [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
+| 1 | AetherGit | Foundational | [10.5281/zenodo.23966896](https://doi.org/10.5281/zenodo.23966896) |
+| 2 | AetherFlow | Foundational | [10.5281/zenodo.23979129](https://doi.org/10.5281/zenodo.23979129) |
+| 3 | AetherProof | Foundational | [10.5281/zenodo.24013124](https://doi.org/10.5281/zenodo.24013124) |
+| 4 | AetherMesh | Foundational | [10.5281/zenodo.24038038](https://doi.org/10.5281/zenodo.24038038) |
+| 5 | AetherGovern | Foundational | [10.5281/zenodo.24054524](https://doi.org/10.5281/zenodo.24054524) |
+| 6 | AetherRuntime | Foundational | [10.5281/zenodo.24078477](https://doi.org/10.5281/zenodo.24078477) |
+| 7 | AetherOrchestrate | Foundational | [10.5281/zenodo.24095399](https://doi.org/10.5281/zenodo.24095399) |
+| 8 | AetherIdentity | Candidate | [10.5281/zenodo.24150001](https://doi.org/10.5281/zenodo.24150001) |
+| 9 | AetherPolicy | Candidate | [10.5281/zenodo.24274702](https://doi.org/10.5281/zenodo.24274702) |
+| 10 | AetherAudit | Candidate | [10.5281/zenodo.24274628](https://doi.org/10.5281/zenodo.24274628) |
+| 11 | AetherHuman | Candidate | [10.5281/zenodo.24406132](https://doi.org/10.5281/zenodo.24406132) |
+| 12 | AetherMemory | Candidate | [10.5281/zenodo.24372288](https://doi.org/10.5281/zenodo.24372288) |
+| 13 | AetherIntent | Candidate | [10.5281/zenodo.24417251](https://doi.org/10.5281/zenodo.24417251) |
+| 14 | AetherHarness | Candidate | [10.5281/zenodo.24425655](https://doi.org/10.5281/zenodo.24425655) |
+| 15 | **AetherSovereignty** | Candidate (this repository) | [Zenodo](https://doi.org/10.5281/zenodo.24433970) · [Figshare](https://doi.org/10.6084/m9.figshare.35091439) |
 
 ---
 
