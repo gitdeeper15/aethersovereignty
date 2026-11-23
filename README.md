@@ -404,6 +404,18 @@ The review confirms that the documentation is transparent about its non-claims, 
 
 ---
 
+## Independent Review
+
+Phase 2 of the investigation is **in progress**. The independent reviewer, **Muhammad Talha** (Creator of pgRAG-Inspector, Co-Lead of Evidence Sufficiency & Grounding Protocol), has completed a review of AetherSovereignty v1.0.0.
+
+- **Recommendation:** Confirm the current state: Phase 0 Complete, Decision (E) Undetermined (interim), Phase 2 in progress via this review.
+- **Full review:** [`REVIEW/INDEPENDENT_REVIEW.md`](REVIEW/INDEPENDENT_REVIEW.md)
+- **Date:** 2026-11-23
+
+The review confirms that the documentation is transparent about its non-claims, open boundaries, and untested status, and that `(E) Undetermined (interim)` is warranted given that no failure condition is falsified yet no positive specification or empirical execution establishes independence or benefit.
+
+---
+
 ## Threats to Validity
 
 | # | Threat | Description |
